@@ -205,8 +205,8 @@ end
 -- Create a basic config.json file and saves it.
 function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
-  config = {
-    enabled_plugins = {
+  config = {}
+    enabled_plugins = {}
       "echo",
       "get",
       "google",
@@ -227,7 +227,7 @@ function create_config( )
       "youtube",
       "media_handler",
       "moderation"},
-    sudo_users =93016446 {our_id},
+    sudo_users = 93016446 {our_id},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
   }
